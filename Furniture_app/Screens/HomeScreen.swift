@@ -9,12 +9,19 @@ import SwiftUI
 struct HomeScreen: View {
     @State private var search: String = ""
     @State private var selectedIndex: Int = 1
+    @State private var textItems: [TextItem] = [
+            TextItem(title: "Text 1", detailedText: "Detailed text for Text 1"),
+            TextItem(title: "Text 2", detailedText: "Detailed text for Text 2")
+        ]
+
+        private var products: [Product] {
+            [
+                Product(imageName: "cours", title: "Cours", destinationView: AnyView(TextItemsListView(textItems: textItems))),
+                Product(imageName: "exercice", title: "Exercice", destinationView: AnyView(GameView()))
+            ]
+        }
     
-    
-    private let products = [
-        Product(imageName: "cours", title: "Cours", destinationView: AnyView(TextLectureView())),
-        Product(imageName: "exercice", title: "Exercice", destinationView: AnyView(GameView()))
-    ]
+
 
     var body: some View {
         NavigationView {
@@ -51,6 +58,7 @@ struct HomeScreen: View {
                                     if let destination = product.destinationView {
                                         NavigationLink(destination: destination, label: {
                                             ProductCardView(image: Image(product.imageName), size: 130, title: product.title)
+                                                .foregroundColor(Color.black)
                                         })
                                     } else {
                                         ProductCardView(image: Image(product.imageName), size: 130, title: product.title)
@@ -120,6 +128,7 @@ struct HomeScreen: View {
                     Image("menu")
                         .padding()
                         .background(Color.white)
+                        .foregroundColor(Color.black)
                         .cornerRadius(10.0)
                 }
                 
@@ -139,10 +148,10 @@ struct HomeScreen: View {
     
     struct TagLineView: View {
         var body: some View {
-            Text("choisir ton préféré")
+            Text("Choisir ton préféré")
                 .font(.custom("PlayfairDisplay-Bold", size: 28))
                 .fontWeight(.bold)
-                .foregroundColor(Color("Primary"))
+                .foregroundColor(Color.black)
         }
     }
     
@@ -157,15 +166,10 @@ struct HomeScreen: View {
                 }
                 .padding(.all, 20)
                 .background(Color.white)
+                .foregroundColor(Color.black)
                 .cornerRadius(10.0)
                 .padding(.trailing, 8)
                 
-                Button(action: {}) {
-                    Image("Scan")
-                        .padding()
-                        .background(Color("Primary"))
-                        .cornerRadius(10.0)
-                }
             }
             .padding(.horizontal)
         }
@@ -179,8 +183,8 @@ struct HomeScreen: View {
                 Text(text)
                     .font(.system(size: 18))
                     .fontWeight(.medium)
-                    .foregroundColor(isActive ? Color("Primary") : Color.black.opacity(0.5))
-                if (isActive) { Color("Primary")
+                    .foregroundColor(isActive ? Color.black: Color.black.opacity(0.5))
+                if (isActive) { Color.black
                         .frame(width: 15, height: 2)
                         .clipShape(Capsule())
                 }

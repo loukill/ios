@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GameOverView: View {
     @Environment(\.presentationMode) var presentationMode
+    var onDismiss: () -> Void 
 
     var body: some View {
         VStack {
@@ -20,6 +21,7 @@ struct GameOverView: View {
         .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         presentationMode.wrappedValue.dismiss()
+                        onDismiss() 
                     }
                 }
     }

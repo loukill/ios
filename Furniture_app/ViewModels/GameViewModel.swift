@@ -50,38 +50,40 @@ class GameViewModel: ObservableObject {
         }
     }
     
-    var onGameOver: (() -> Void)?
+    func finishGame() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            withAnimation {
+                self.isGameOver = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    print("Setting navigateToGameOver to true")
+                    self.navigateToGameOver = true
+                }
+            }
+        }
+    }
+    
 
     private func checkForMatch() {
         guard userChoices.count == 2 else { return }
 
-        if userChoices[0].text == userChoices[1].text {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                withAnimation {
+        let isMatch = userChoices[0].text == userChoices[1].text
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            withAnimation {
+                if isMatch {
                     self.matchedCards.append(contentsOf: self.userChoices)
                     self.userChoices.forEach { $0.isMatched = true }
-                    self.userChoices.removeAll()
-                }
-            }
-        } else {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                withAnimation {
+                } else {
                     self.userChoices.forEach { $0.turnOver() }
-                    self.userChoices.removeAll()
+                }
+                self.userChoices.removeAll()
+
+                // Check if the game is over
+                if self.matchedCards.count == self.cards.count {
+                    self.isGameOver = true
+                    self.navigateToGameOver = true
                 }
             }
         }
-        if matchedCards.count == cards.count {
-                  DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                      withAnimation {
-                          self.isGameOver = true
-                          DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                              print("Setting navigateToGameOver to true")
-                              self.navigateToGameOver = true
-                          }
-                      }
-                  }
-              }
     }
 
     func isCardMatched(_ card: Card) -> Bool {
