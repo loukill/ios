@@ -14,15 +14,16 @@
 		0403CF252B0AE08A0028C082 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403CF242B0AE08A0028C082 /* CategoryViewModel.swift */; };
 		0403CF272B0AED790028C082 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403CF262B0AED790028C082 /* RemoteImageView.swift */; };
 		042004182B06935C00854A36 /* TextCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042004172B06935B00854A36 /* TextCategory.swift */; };
-		042004202B0693AD00854A36 /* TextDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420041F2B0693AD00854A36 /* TextDetailView.swift */; };
 		042004262B06C0D700854A36 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042004252B06C0D700854A36 /* GameOverView.swift */; };
 		04292F582B0E48A00016CB2E /* Texte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04292F572B0E48A00016CB2E /* Texte.swift */; };
 		04292F5E2B0E93540016CB2E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04292F5D2B0E93540016CB2E /* SwiftUIView.swift */; };
 		04292F622B0E99950016CB2E /* OpenDyslexic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04292F612B0E99950016CB2E /* OpenDyslexic-Bold.otf */; };
 		042A52072B0BA8930064FC3C /* TextCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A52062B0BA8930064FC3C /* TextCategoryViewModel.swift */; };
 		043D819C2B07DBF100A37B21 /* TextCategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D819B2B07DBF100A37B21 /* TextCategoriesListView.swift */; };
-		047633742B0569AA002FE4CE /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047633732B0569AA002FE4CE /* GameView.swift */; };
-		047633762B0569B9002FE4CE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047633752B0569B9002FE4CE /* CardView.swift */; };
+		044904EE2B107E3E007D5585 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044904ED2B107E3E007D5585 /* GameView.swift */; };
+		044904F02B107E68007D5585 /* TextDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044904EF2B107E68007D5585 /* TextDetailView.swift */; };
+		044904F22B107E93007D5585 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044904F12B107E93007D5585 /* CardView.swift */; };
+		044904F42B10919D007D5585 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044904F32B10919D007D5585 /* NavBarView.swift */; };
 		047633782B0569C2002FE4CE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047633772B0569C2002FE4CE /* Utilities.swift */; };
 		047633B72B058407002FE4CE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047633B62B058407002FE4CE /* Card.swift */; };
 		047633BA2B058464002FE4CE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047633B92B058464002FE4CE /* Product.swift */; };
@@ -64,15 +65,16 @@
 		0403CF242B0AE08A0028C082 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		0403CF262B0AED790028C082 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		042004172B06935B00854A36 /* TextCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextCategory.swift; path = ../../../../Desktop/textLecture/textLecture/Model/TextCategory.swift; sourceTree = "<group>"; };
-		0420041F2B0693AD00854A36 /* TextDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextDetailView.swift; path = ../../../../Desktop/textLecture/textLecture/Views/TextDetailView.swift; sourceTree = "<group>"; };
 		042004252B06C0D700854A36 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		04292F572B0E48A00016CB2E /* Texte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texte.swift; sourceTree = "<group>"; };
 		04292F5D2B0E93540016CB2E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		04292F612B0E99950016CB2E /* OpenDyslexic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexic-Bold.otf"; path = "../../../OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf"; sourceTree = "<group>"; };
 		042A52062B0BA8930064FC3C /* TextCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCategoryViewModel.swift; sourceTree = "<group>"; };
 		043D819B2B07DBF100A37B21 /* TextCategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCategoriesListView.swift; sourceTree = "<group>"; };
-		047633732B0569AA002FE4CE /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameView.swift; path = "../../../../Desktop/memory game/memory game/GameView.swift"; sourceTree = "<group>"; };
-		047633752B0569B9002FE4CE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../../Desktop/memory game/memory game/CardView.swift"; sourceTree = "<group>"; };
+		044904ED2B107E3E007D5585 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		044904EF2B107E68007D5585 /* TextDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetailView.swift; sourceTree = "<group>"; };
+		044904F12B107E93007D5585 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		044904F32B10919D007D5585 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		047633772B0569C2002FE4CE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		047633B62B058407002FE4CE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		047633B92B058464002FE4CE /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -237,15 +239,16 @@
 		885A598225D983F6003A6F78 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				0420041F2B0693AD00854A36 /* TextDetailView.swift */,
 				043D819B2B07DBF100A37B21 /* TextCategoriesListView.swift */,
-				047633752B0569B9002FE4CE /* CardView.swift */,
 				885A598325D98409003A6F78 /* HomeScreen.swift */,
-				047633732B0569AA002FE4CE /* GameView.swift */,
 				042004252B06C0D700854A36 /* GameOverView.swift */,
 				0403CF1D2B0ADA9E0028C082 /* CategoryView.swift */,
 				0403CF262B0AED790028C082 /* RemoteImageView.swift */,
 				04292F5D2B0E93540016CB2E /* SwiftUIView.swift */,
+				044904ED2B107E3E007D5585 /* GameView.swift */,
+				044904EF2B107E68007D5585 /* TextDetailView.swift */,
+				044904F12B107E93007D5585 /* CardView.swift */,
+				044904F32B10919D007D5585 /* NavBarView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -384,27 +387,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044904F02B107E68007D5585 /* TextDetailView.swift in Sources */,
 				047633BD2B0585BB002FE4CE /* GameViewModel.swift in Sources */,
 				8804739925D8C14200F9A279 /* ContentView.swift in Sources */,
 				04292F5E2B0E93540016CB2E /* SwiftUIView.swift in Sources */,
 				0403CF232B0AE0310028C082 /* ApiService.swift in Sources */,
 				047633BA2B058464002FE4CE /* Product.swift in Sources */,
 				042004262B06C0D700854A36 /* GameOverView.swift in Sources */,
+				044904F42B10919D007D5585 /* NavBarView.swift in Sources */,
 				8804739725D8C14200F9A279 /* Furniture_appApp.swift in Sources */,
 				042004182B06935C00854A36 /* TextCategory.swift in Sources */,
-				042004202B0693AD00854A36 /* TextDetailView.swift in Sources */,
 				0403CF202B0ADFF30028C082 /* Category.swift in Sources */,
 				047633B72B058407002FE4CE /* Card.swift in Sources */,
 				885A598425D98409003A6F78 /* HomeScreen.swift in Sources */,
 				047633782B0569C2002FE4CE /* Utilities.swift in Sources */,
 				0403CF1C2B0AD7C70028C082 /* TextDetailViewModel.swift in Sources */,
 				043D819C2B07DBF100A37B21 /* TextCategoriesListView.swift in Sources */,
-				047633762B0569B9002FE4CE /* CardView.swift in Sources */,
+				044904EE2B107E3E007D5585 /* GameView.swift in Sources */,
 				04292F582B0E48A00016CB2E /* Texte.swift in Sources */,
 				0403CF272B0AED790028C082 /* RemoteImageView.swift in Sources */,
-				047633742B0569AA002FE4CE /* GameView.swift in Sources */,
 				0403CF252B0AE08A0028C082 /* CategoryViewModel.swift in Sources */,
 				042A52072B0BA8930064FC3C /* TextCategoryViewModel.swift in Sources */,
+				044904F22B107E93007D5585 /* CardView.swift in Sources */,
 				0403CF1E2B0ADA9E0028C082 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,14 +13,14 @@ struct HomeScreen: View {
                     .fontWeight(.bold)
                     .padding(.top)
                 
-                Image("home")
+                Image("Home")
                     .resizable()
                     .scaledToFill()
                     .frame(maxWidth: .infinity, maxHeight: 200)
                     .clipped()
                     .padding(.top)
                 
-                
+                Spacer()
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 30) { // Ajout d'espace entre les images
                         ForEach(categoryViewModel.categories, id: \.id) { category in
