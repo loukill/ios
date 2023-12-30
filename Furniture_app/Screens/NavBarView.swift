@@ -4,7 +4,7 @@
 //
 //  Created by mohamed loukil on 24/11/2023.
 //
-
+/*
 import SwiftUI
 
 struct NavBarView: View {
@@ -46,14 +46,14 @@ struct NavBarView: View {
                     }
             }
             .accentColor(.purple) // Couleur pour les icônes actives
-            .navigationBarColor(.orange, textColor: .white)
+            .navigationBarColor(backgroundColor: .orange, textColor: .white)
             .environmentObject(categoryViewModel)
         }
     }
 }
 
 extension View {
-    func navigationBarColor(_ backgroundColor: UIColor, textColor: UIColor) -> some View {
+    func navigationBarColor(backgroundColor: UIColor, textColor: UIColor) -> some View {
         modifier(NavigationBarModifier(backgroundColor: backgroundColor, textColor: textColor))
     }
 }
@@ -81,3 +81,4 @@ struct NavigationBarModifier: ViewModifier {
             }
     }
 }
+*/

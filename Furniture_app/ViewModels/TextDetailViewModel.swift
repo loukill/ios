@@ -16,9 +16,10 @@ class TextDetailViewModel: ObservableObject {
     @Published var texteAudioUrl: String = ""
     var audioPlayer: AVPlayer?
     
-    func fetchTextByCategoryId(_ categoryId: String) {
-        print("Fetching text for categoryId: \(categoryId)")
-        guard let url = URL(string: "http://localhost:3000/text/parCategorie/\(categoryId)") else {
+    func fetchTextById(_ textId: String) {
+        print("Fetching text for text ID: \(textId)")
+        let timestamp = Date().timeIntervalSince1970
+        guard let url = URL(string: "http://localhost:3000/text/\(textId)?timestamp=\(timestamp)") else {
             print("Invalid URL")
             return
         }
@@ -38,6 +39,7 @@ class TextDetailViewModel: ObservableObject {
             }
         }.resume()
     }
+
     
     func fetchAllTextes() {
         let url = URL(string: "http://localhost:3000/text")!
@@ -60,20 +62,24 @@ class TextDetailViewModel: ObservableObject {
     }
     
     
-    func fetchAudioUrlForCategory(categoryId: String) {
-        guard let url = URL(string: "http://localhost:3000/text/synthese/parCategorie/\(categoryId)") else { return }
+    func fetchAudioUrlForCategory(textId: String) {
+        guard let url = URL(string: "http://localhost:3000/text/synthese/parTexte/\(textId)") else { return }
 
         URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             if let data = data {
                 do {
-                    // Décoder la réponse JSON pour obtenir l'URL audio
-                    let response = try JSONDecoder().decode([String: String].self, from: data)
-                    if let audioUrlStr = response["audioUrl"], let audioUrl = URL(string: audioUrlStr) {
-                        DispatchQueue.main.async {
-                            self?.texteAudioUrl = audioUrlStr
-                            self?.audioPlayer = AVPlayer(url: audioUrl)
-                            self?.audioPlayer?.play()
+                    // Decode the response as a dictionary
+                    if let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                       let audioUrls = jsonDict["audioUrls"] as? [String] {
+                        // Check if there are any audio URLs in the array
+                        if !audioUrls.isEmpty {
+                            // Play the audio chunks one after the other
+                            self?.playAudioChunks(audioUrls)
+                        } else {
+                            print("No audio URLs found in the response.")
                         }
+                    } else {
+                        print("Failed to extract audio URLs from the response.")
                     }
                 } catch {
                     print("Failed to decode JSON or play audio: \(error)")
@@ -84,5 +90,18 @@ class TextDetailViewModel: ObservableObject {
         }.resume()
     }
 
-  
+
+    private func playAudioChunks(_ audioUrls: [String]) {
+        // Iterate through the audio URLs and play them sequentially
+        for audioUrlStr in audioUrls {
+            if let audioUrl = URL(string: audioUrlStr) {
+                let playerItem = AVPlayerItem(url: audioUrl)
+                let audioPlayer = AVPlayer(playerItem: playerItem)
+                audioPlayer.play()
+                
+                // Wait for the current chunk to finish playing before playing the next one
+                while audioPlayer.rate != 0 { /* Wait */ }
+            }
+        }
+    }
 }

@@ -3,13 +3,16 @@ import SwiftUI
 struct GameView: View {
     @Environment(\.presentationMode) var presentationMode
     @StateObject var viewModel = GameViewModel()
+    @Binding var isTabBarPresented: Bool
 
     var body: some View {
         GeometryReader { geo in
             VStack {
-                Text("🌊Ocean Memory🌊")
-                    .font(.largeTitle)
-
+                
+                Text(timerString(from: viewModel.gameTimer))
+                    .font(.headline)
+                    .padding()
+                
                 LazyVGrid(columns: viewModel.fourColumnGrid, spacing: 10) {
                     ForEach(viewModel.cards) { card in
                         CardView(card: card,
@@ -17,28 +20,27 @@ struct GameView: View {
                                  viewModel: viewModel)
                     }
                 }
-                
-                VStack {
-                    Text("Match these cards to win:")
-                    LazyVGrid(columns: viewModel.sixColumnGrid, spacing: 5) {
-                        ForEach(cardValues, id: \.self) { cardValue in
-                            if !viewModel.matchedCards.contains(where: { $0.text == cardValue }) {
-                                Text(cardValue)
-                                    .font(.system(size: 40))
-                            }
-                        }
-                    }
+                .padding()
+                .fullScreenCover(isPresented: $viewModel.navigateToScoreboard) {
+                    // Passer l'instance viewModel à ScoreboardView
+                    ScoreboardView(isTabBarPresented: $isTabBarPresented, viewModel: viewModel)
                 }
-                .fullScreenCover(isPresented: $viewModel.navigateToGameOver) {
-                            GameOverView(onDismiss: {
-                                // This closure is called when GameOverView is dismissed
-                                self.presentationMode.wrappedValue.dismiss()
-                            })
-                        }
+
+                Spacer()
+            }
+            .navigationBarTitle("🌊Ocean Memory🌊", displayMode: .inline)
+            .onAppear {
+                viewModel.startTimer() // Démarre le timer lorsque la vue apparaît
+            }
+            .onDisappear {
+                viewModel.stopTimer() // Arrête le timer lorsque la vue disparaît
             }
         }
-        .padding()
-        
+    }
+    
+    func timerString(from totalSeconds: Int) -> String {
+        let minutes = totalSeconds / 60
+        let seconds = totalSeconds % 60
+        return String(format: "%02d:%02d", minutes, seconds)
     }
 }
-

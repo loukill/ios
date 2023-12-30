@@ -4,7 +4,6 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>OpenDyslexic-Bold.otf</string>
 		<string>PlayfairDisplay-Regular.ttf</string>
 		<string>PlayfairDisplay-Bold.ttf</string>
 	</array>

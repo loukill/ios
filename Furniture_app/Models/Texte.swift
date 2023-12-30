@@ -9,12 +9,16 @@ import Foundation
 
 struct Texte: Codable, Identifiable {
     var id: String
+    var titre: String
     var contenu: String
-    var dateCreation: Date?
-    
+    var txtCategoryId: String?
+    var dateCreation: String
+
     enum CodingKeys: String, CodingKey {
-           case id = "_id" // ou le nom de clé approprié
-           case contenu
-           
-       }
+        case id = "_id"
+        case titre = "title"
+        case contenu
+        case txtCategoryId = "nomDeLaCleDansLeJSON"
+        case dateCreation
+    }
 }

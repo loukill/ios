@@ -3,17 +3,18 @@ import AVFoundation
 
 struct TextDetailView: View {
     @ObservedObject var viewModel = TextDetailViewModel()
-    var categoryId: String
+    var textId: String 
+    var title: String
 
     var body: some View {
         VStack {
             HStack {
                 if let texte = viewModel.texte {
                     Text(texte.contenu)
-                        .font(.custom("OpenDyslexic-Bold", size: 24))
-                        .foregroundColor(Color.darkBlue)
+                        //.font(.custom("PlayfairDisplay-Bold", size: 24))
+                        //.foregroundColor(Color.darkBlue)
                         .padding()
-                        .background(Color.lightYellow)
+                        //.background(Color.lightYellow)
                         .lineSpacing(10)
                     Spacer() // Pousse le texte à gauche
                 } else {
@@ -23,7 +24,7 @@ struct TextDetailView: View {
             }
             Spacer() // Pousse le contenu en haut
             Button("Lire") {
-                viewModel.fetchAudioUrlForCategory(categoryId: categoryId)
+                viewModel.fetchAudioUrlForCategory(textId: textId)
             }
             .font(.system(size: 24, weight: .bold))
             .frame(maxWidth: .infinity)
@@ -36,7 +37,8 @@ struct TextDetailView: View {
         .edgesIgnoringSafeArea(.bottom)
         .background(Color.lightYellow.edgesIgnoringSafeArea(.all))
         .onAppear {
-            viewModel.fetchTextByCategoryId(categoryId)
+            viewModel.fetchTextById(textId)
         }
+        .navigationBarTitle(title)
     }
 }

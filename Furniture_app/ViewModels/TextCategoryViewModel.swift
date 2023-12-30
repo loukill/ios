@@ -8,15 +8,19 @@
 import Foundation
 
 class TextCategoryViewModel: ObservableObject {
-    @Published var textCategories: [TextCategory] = []
+    @Published var textIds: [String] = []
+    @Published var textTitles: [String] = []
    
     init() {
-            loadCategories()
+        loadTexts()
         }
 
-        private func loadCategories() {
-            APIService.shared.fetchTextCategory { [weak self] categories in
-                self?.textCategories = categories
+    private func loadTexts() {
+            APIService.shared.fetchTexts { [weak self] texts in
+                let titles = texts.map { $0.titre }
+                let ids = texts.map { $0.id }
+                self?.textIds = ids
+                self?.textTitles = titles
             }
         }
     

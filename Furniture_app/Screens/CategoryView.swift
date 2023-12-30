@@ -1,9 +1,5 @@
 import SwiftUI
 
-
-import SwiftUI
-
-
 struct CategoryView: View {
     @ObservedObject var viewModel: CategoryViewModel
     let category: Category
@@ -30,14 +26,10 @@ struct CategoryView: View {
                 .font(.custom("PlayfairDisplay-Bold", size: 20))
                 .foregroundColor(isActive ? Color.black : Color.gray)
             
-            
-            
         }
         .onTapGesture {
             self.onCategoryTap(category)
         }
         
     }
-   
 }
-

@@ -4,6 +4,7 @@
 //
 //  Created by mohamed loukil on 22/11/2023.
 //
+/*
 import SwiftUI
 
 struct DyslexicFriendlyTextView: View {
@@ -28,3 +29,4 @@ struct DyslexicFriendlyTextView_Previews: PreviewProvider {
         DyslexicFriendlyTextView()
     }
 }
+*/

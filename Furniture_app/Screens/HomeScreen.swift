@@ -1,10 +1,11 @@
-import SwiftUI
+    import SwiftUI
 
 struct HomeScreen: View {
     @StateObject private var categoryViewModel = CategoryViewModel()
     @State private var navigateToTextItems: Bool = false
     @State private var navigateToGame: Bool = false
-
+    @Binding var isTabBarPresented: Bool
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -20,9 +21,8 @@ struct HomeScreen: View {
                     .clipped()
                     .padding(.top)
                 
-                Spacer()
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 30) { // Ajout d'espace entre les images
+                ScrollView(.vertical, showsIndicators: false) {
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))], spacing: 30) {
                         ForEach(categoryViewModel.categories, id: \.id) { category in
                             CategoryView(
                                 viewModel: categoryViewModel,
@@ -30,7 +30,8 @@ struct HomeScreen: View {
                                 isActive: false,
                                 text: category.title,
                                 onCategoryTap: { selectedCategory in
-                                    if selectedCategory.title.lowercased() == "exercices".lowercased() {
+                                    
+                                    if selectedCategory.title.lowercased() == "Match card".lowercased() {
                                         navigateToGame = true
                                     } else if selectedCategory.title.lowercased() == "cours".lowercased() {
                                         navigateToTextItems = true
@@ -39,25 +40,28 @@ struct HomeScreen: View {
                             )
                             .frame(width: 150, height: 150)
                         }
+                        
                     }
-                    .padding(.vertical, 20) // Ajout d'espace au-dessus et en dessous des images
+                    .padding(.vertical, 20)
                 }
-
+                
                 if navigateToTextItems {
-                    NavigationLink(destination: TextCategoriesListView(), isActive: $navigateToTextItems) {
+                    NavigationLink(destination: TextCategoriesListView(isTabBarPresented: $isTabBarPresented), isActive: $navigateToTextItems) {
                         EmptyView()
                     }
                 }
                 
                 if navigateToGame {
-                    NavigationLink(destination: GameView(), isActive: $navigateToGame) {
-                        EmptyView()
-                    }
-                }
-                Spacer()
+                           NavigationLink(destination: GameView(isTabBarPresented: $isTabBarPresented), isActive: $navigateToGame) {
+                               EmptyView()
+                           }
+                       }
+                
             }
             .navigationBarTitle("", displayMode: .inline)
+            .navigationBarBackButtonHidden(true)
             .padding(.horizontal)
         }
     }
+   
 }

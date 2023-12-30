@@ -7,27 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0402F8AE2B3F9C0200388853 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402F8AD2B3F9C0200388853 /* Score.swift */; };
+		0402F8B02B3F9C3300388853 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402F8AF2B3F9C3300388853 /* ScoreboardView.swift */; };
 		0403CF1C2B0AD7C70028C082 /* TextDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403CF1B2B0AD7C70028C082 /* TextDetailViewModel.swift */; };
 		0403CF1E2B0ADA9E0028C082 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403CF1D2B0ADA9E0028C082 /* CategoryView.swift */; };
 		0403CF202B0ADFF30028C082 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403CF1F2B0ADFF30028C082 /* Category.swift */; };
 		0403CF232B0AE0310028C082 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403CF222B0AE0310028C082 /* ApiService.swift */; };
 		0403CF252B0AE08A0028C082 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403CF242B0AE08A0028C082 /* CategoryViewModel.swift */; };
 		0403CF272B0AED790028C082 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403CF262B0AED790028C082 /* RemoteImageView.swift */; };
+		04075CA62B3F728C0061B550 /* ForumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075C992B3F728C0061B550 /* ForumListView.swift */; };
+		04075CA72B3F728C0061B550 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075C9A2B3F728C0061B550 /* NavigationConfigurator.swift */; };
+		04075CA82B3F728C0061B550 /* ForumDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CA12B3F728C0061B550 /* ForumDetailsView.swift */; };
+		04075CA92B3F728C0061B550 /* ModifyForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CA22B3F728C0061B550 /* ModifyForumView.swift */; };
+		04075CAA2B3F728C0061B550 /* ForumRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CA32B3F728C0061B550 /* ForumRowView.swift */; };
+		04075CAB2B3F728C0061B550 /* CreateForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CA42B3F728C0061B550 /* CreateForumView.swift */; };
+		04075CAC2B3F728C0061B550 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CA52B3F728C0061B550 /* CommentView.swift */; };
+		04075CB12B3F72FE0061B550 /* Commentaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CAD2B3F72FE0061B550 /* Commentaire.swift */; };
+		04075CB22B3F72FE0061B550 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CAE2B3F72FE0061B550 /* Forum.swift */; };
+		04075CB32B3F72FE0061B550 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CAF2B3F72FE0061B550 /* User.swift */; };
+		04075CB42B3F72FE0061B550 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CB02B3F72FE0061B550 /* Rating.swift */; };
+		04075CB72B3F730E0061B550 /* ForumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CB52B3F730E0061B550 /* ForumDetailViewModel.swift */; };
+		04075CB82B3F730E0061B550 /* ForumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04075CB62B3F730E0061B550 /* ForumListViewModel.swift */; };
 		042004182B06935C00854A36 /* TextCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042004172B06935B00854A36 /* TextCategory.swift */; };
 		042004262B06C0D700854A36 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042004252B06C0D700854A36 /* GameOverView.swift */; };
 		04292F582B0E48A00016CB2E /* Texte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04292F572B0E48A00016CB2E /* Texte.swift */; };
 		04292F5E2B0E93540016CB2E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04292F5D2B0E93540016CB2E /* SwiftUIView.swift */; };
-		04292F622B0E99950016CB2E /* OpenDyslexic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04292F612B0E99950016CB2E /* OpenDyslexic-Bold.otf */; };
 		042A52072B0BA8930064FC3C /* TextCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A52062B0BA8930064FC3C /* TextCategoryViewModel.swift */; };
 		043D819C2B07DBF100A37B21 /* TextCategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D819B2B07DBF100A37B21 /* TextCategoriesListView.swift */; };
 		044904EE2B107E3E007D5585 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044904ED2B107E3E007D5585 /* GameView.swift */; };
 		044904F02B107E68007D5585 /* TextDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044904EF2B107E68007D5585 /* TextDetailView.swift */; };
 		044904F22B107E93007D5585 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044904F12B107E93007D5585 /* CardView.swift */; };
 		044904F42B10919D007D5585 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044904F32B10919D007D5585 /* NavBarView.swift */; };
+		04580FB92B40A92200349DE0 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04580FB82B40A92200349DE0 /* DateFormatterExtensions.swift */; };
 		047633782B0569C2002FE4CE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047633772B0569C2002FE4CE /* Utilities.swift */; };
 		047633B72B058407002FE4CE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047633B62B058407002FE4CE /* Card.swift */; };
 		047633BA2B058464002FE4CE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047633B92B058464002FE4CE /* Product.swift */; };
 		047633BD2B0585BB002FE4CE /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047633BC2B0585BB002FE4CE /* GameViewModel.swift */; };
+		04C55A322B3AE74700BDE759 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C55A312B3AE74700BDE759 /* Color.swift */; };
 		8804739725D8C14200F9A279 /* Furniture_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804739625D8C14200F9A279 /* Furniture_appApp.swift */; };
 		8804739925D8C14200F9A279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804739825D8C14200F9A279 /* ContentView.swift */; };
 		8804739B25D8C14400F9A279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8804739A25D8C14400F9A279 /* Assets.xcassets */; };
@@ -58,27 +74,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0402F8AD2B3F9C0200388853 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		0402F8AF2B3F9C3300388853 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		0403CF1B2B0AD7C70028C082 /* TextDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetailViewModel.swift; sourceTree = "<group>"; };
 		0403CF1D2B0ADA9E0028C082 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		0403CF1F2B0ADFF30028C082 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		0403CF222B0AE0310028C082 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		0403CF242B0AE08A0028C082 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		0403CF262B0AED790028C082 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		04075C992B3F728C0061B550 /* ForumListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumListView.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Views/ForumListView.swift"; sourceTree = "<group>"; };
+		04075C9A2B3F728C0061B550 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationConfigurator.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Views/NavigationConfigurator.swift"; sourceTree = "<group>"; };
+		04075CA12B3F728C0061B550 /* ForumDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumDetailsView.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Views/ForumDetailsView.swift"; sourceTree = "<group>"; };
+		04075CA22B3F728C0061B550 /* ModifyForumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModifyForumView.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Views/ModifyForumView.swift"; sourceTree = "<group>"; };
+		04075CA32B3F728C0061B550 /* ForumRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumRowView.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Views/ForumRowView.swift"; sourceTree = "<group>"; };
+		04075CA42B3F728C0061B550 /* CreateForumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateForumView.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Views/CreateForumView.swift"; sourceTree = "<group>"; };
+		04075CA52B3F728C0061B550 /* CommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentView.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Views/CommentView.swift"; sourceTree = "<group>"; };
+		04075CAD2B3F72FE0061B550 /* Commentaire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Commentaire.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Models/Commentaire.swift"; sourceTree = "<group>"; };
+		04075CAE2B3F72FE0061B550 /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Forum.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Models/Forum.swift"; sourceTree = "<group>"; };
+		04075CAF2B3F72FE0061B550 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Models/User.swift"; sourceTree = "<group>"; };
+		04075CB02B3F72FE0061B550 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rating.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/Models/Rating.swift"; sourceTree = "<group>"; };
+		04075CB52B3F730E0061B550 /* ForumDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumDetailViewModel.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/ViewModels/ForumDetailViewModel.swift"; sourceTree = "<group>"; };
+		04075CB62B3F730E0061B550 /* ForumListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumListViewModel.swift; path = "../../../../Downloads/ios-mahmoud/forum-app/ViewModels/ForumListViewModel.swift"; sourceTree = "<group>"; };
 		042004172B06935B00854A36 /* TextCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextCategory.swift; path = ../../../../Desktop/textLecture/textLecture/Model/TextCategory.swift; sourceTree = "<group>"; };
 		042004252B06C0D700854A36 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		04292F572B0E48A00016CB2E /* Texte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texte.swift; sourceTree = "<group>"; };
 		04292F5D2B0E93540016CB2E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
-		04292F612B0E99950016CB2E /* OpenDyslexic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexic-Bold.otf"; path = "../../../OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf"; sourceTree = "<group>"; };
 		042A52062B0BA8930064FC3C /* TextCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCategoryViewModel.swift; sourceTree = "<group>"; };
 		043D819B2B07DBF100A37B21 /* TextCategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCategoriesListView.swift; sourceTree = "<group>"; };
 		044904ED2B107E3E007D5585 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		044904EF2B107E68007D5585 /* TextDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetailView.swift; sourceTree = "<group>"; };
 		044904F12B107E93007D5585 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		044904F32B10919D007D5585 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
+		04580FB82B40A92200349DE0 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		047633772B0569C2002FE4CE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		047633B62B058407002FE4CE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		047633B92B058464002FE4CE /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		047633BC2B0585BB002FE4CE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		04C55A312B3AE74700BDE759 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8804739325D8C14200F9A279 /* Furniture_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Furniture_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8804739625D8C14200F9A279 /* Furniture_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_appApp.swift; sourceTree = "<group>"; };
 		8804739825D8C14200F9A279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				047633772B0569C2002FE4CE /* Utilities.swift */,
+				04580FB82B40A92200349DE0 /* DateFormatterExtensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -146,6 +179,11 @@
 				047633B62B058407002FE4CE /* Card.swift */,
 				047633B92B058464002FE4CE /* Product.swift */,
 				0403CF1F2B0ADFF30028C082 /* Category.swift */,
+				04075CAD2B3F72FE0061B550 /* Commentaire.swift */,
+				04075CAE2B3F72FE0061B550 /* Forum.swift */,
+				04075CB02B3F72FE0061B550 /* Rating.swift */,
+				04075CAF2B3F72FE0061B550 /* User.swift */,
+				0402F8AD2B3F9C0200388853 /* Score.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +195,8 @@
 				0403CF1B2B0AD7C70028C082 /* TextDetailViewModel.swift */,
 				0403CF242B0AE08A0028C082 /* CategoryViewModel.swift */,
 				042A52062B0BA8930064FC3C /* TextCategoryViewModel.swift */,
+				04075CB52B3F730E0061B550 /* ForumDetailViewModel.swift */,
+				04075CB62B3F730E0061B550 /* ForumListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -229,9 +269,9 @@
 		880473C425D8C19E00F9A279 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				04292F612B0E99950016CB2E /* OpenDyslexic-Bold.otf */,
 				880473C625D8C1D200F9A279 /* PlayfairDisplay-Bold.ttf */,
 				880473C525D8C1D200F9A279 /* PlayfairDisplay-Regular.ttf */,
+				04C55A312B3AE74700BDE759 /* Color.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -242,13 +282,21 @@
 				043D819B2B07DBF100A37B21 /* TextCategoriesListView.swift */,
 				885A598325D98409003A6F78 /* HomeScreen.swift */,
 				042004252B06C0D700854A36 /* GameOverView.swift */,
+				044904ED2B107E3E007D5585 /* GameView.swift */,
 				0403CF1D2B0ADA9E0028C082 /* CategoryView.swift */,
 				0403CF262B0AED790028C082 /* RemoteImageView.swift */,
 				04292F5D2B0E93540016CB2E /* SwiftUIView.swift */,
-				044904ED2B107E3E007D5585 /* GameView.swift */,
 				044904EF2B107E68007D5585 /* TextDetailView.swift */,
 				044904F12B107E93007D5585 /* CardView.swift */,
 				044904F32B10919D007D5585 /* NavBarView.swift */,
+				04075CA52B3F728C0061B550 /* CommentView.swift */,
+				04075CA42B3F728C0061B550 /* CreateForumView.swift */,
+				04075CA12B3F728C0061B550 /* ForumDetailsView.swift */,
+				04075C992B3F728C0061B550 /* ForumListView.swift */,
+				04075CA32B3F728C0061B550 /* ForumRowView.swift */,
+				04075CA22B3F728C0061B550 /* ModifyForumView.swift */,
+				04075C9A2B3F728C0061B550 /* NavigationConfigurator.swift */,
+				0402F8AF2B3F9C3300388853 /* ScoreboardView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -359,7 +407,6 @@
 			files = (
 				880473C825D8C1D200F9A279 /* PlayfairDisplay-Bold.ttf in Resources */,
 				8804739E25D8C14400F9A279 /* Preview Assets.xcassets in Resources */,
-				04292F622B0E99950016CB2E /* OpenDyslexic-Bold.otf in Resources */,
 				888C4E9825DCF21F00F9B6ED /* README.md in Resources */,
 				8804739B25D8C14400F9A279 /* Assets.xcassets in Resources */,
 				880473C725D8C1D200F9A279 /* PlayfairDisplay-Regular.ttf in Resources */,
@@ -387,29 +434,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04075CB12B3F72FE0061B550 /* Commentaire.swift in Sources */,
 				044904F02B107E68007D5585 /* TextDetailView.swift in Sources */,
 				047633BD2B0585BB002FE4CE /* GameViewModel.swift in Sources */,
+				04075CB82B3F730E0061B550 /* ForumListViewModel.swift in Sources */,
 				8804739925D8C14200F9A279 /* ContentView.swift in Sources */,
 				04292F5E2B0E93540016CB2E /* SwiftUIView.swift in Sources */,
 				0403CF232B0AE0310028C082 /* ApiService.swift in Sources */,
+				04C55A322B3AE74700BDE759 /* Color.swift in Sources */,
 				047633BA2B058464002FE4CE /* Product.swift in Sources */,
+				04075CAC2B3F728C0061B550 /* CommentView.swift in Sources */,
+				04075CA82B3F728C0061B550 /* ForumDetailsView.swift in Sources */,
 				042004262B06C0D700854A36 /* GameOverView.swift in Sources */,
 				044904F42B10919D007D5585 /* NavBarView.swift in Sources */,
 				8804739725D8C14200F9A279 /* Furniture_appApp.swift in Sources */,
 				042004182B06935C00854A36 /* TextCategory.swift in Sources */,
 				0403CF202B0ADFF30028C082 /* Category.swift in Sources */,
 				047633B72B058407002FE4CE /* Card.swift in Sources */,
+				04075CA62B3F728C0061B550 /* ForumListView.swift in Sources */,
 				885A598425D98409003A6F78 /* HomeScreen.swift in Sources */,
 				047633782B0569C2002FE4CE /* Utilities.swift in Sources */,
+				04075CA72B3F728C0061B550 /* NavigationConfigurator.swift in Sources */,
+				04075CAB2B3F728C0061B550 /* CreateForumView.swift in Sources */,
 				0403CF1C2B0AD7C70028C082 /* TextDetailViewModel.swift in Sources */,
 				043D819C2B07DBF100A37B21 /* TextCategoriesListView.swift in Sources */,
+				04075CA92B3F728C0061B550 /* ModifyForumView.swift in Sources */,
+				04075CB32B3F72FE0061B550 /* User.swift in Sources */,
+				04580FB92B40A92200349DE0 /* DateFormatterExtensions.swift in Sources */,
 				044904EE2B107E3E007D5585 /* GameView.swift in Sources */,
 				04292F582B0E48A00016CB2E /* Texte.swift in Sources */,
+				04075CB42B3F72FE0061B550 /* Rating.swift in Sources */,
+				04075CAA2B3F728C0061B550 /* ForumRowView.swift in Sources */,
 				0403CF272B0AED790028C082 /* RemoteImageView.swift in Sources */,
 				0403CF252B0AE08A0028C082 /* CategoryViewModel.swift in Sources */,
+				0402F8AE2B3F9C0200388853 /* Score.swift in Sources */,
 				042A52072B0BA8930064FC3C /* TextCategoryViewModel.swift in Sources */,
 				044904F22B107E93007D5585 /* CardView.swift in Sources */,
+				04075CB72B3F730E0061B550 /* ForumDetailViewModel.swift in Sources */,
 				0403CF1E2B0ADA9E0028C082 /* CategoryView.swift in Sources */,
+				0402F8B02B3F9C3300388853 /* ScoreboardView.swift in Sources */,
+				04075CB22B3F72FE0061B550 /* Forum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
